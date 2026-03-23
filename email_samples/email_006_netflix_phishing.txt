@@ -1,0 +1,79 @@
+================================================================================
+EMAIL SAMPLE: EMAIL-006
+CLASSIFICATION: PHISHING
+RISK LEVEL: HIGH
+ATTACK TYPE: Prize/Lottery Scam
+================================================================================
+
+SUBJECT: You've Won a $500 Gift Card!
+FROM: Netflix Rewards <rewards@netflix-gift-center.com>
+TO: user@email.com
+DATE: Sat, 25 Mar 2026 10:15:00 +0000
+
+--------------------------------------------------------------------------------
+EMAIL BODY:
+--------------------------------------------------------------------------------
+
+CONGRATULATIONS!
+
+You have been selected as our monthly winner!
+
+You've won a $500 Netflix Gift Card!
+
+To claim your prize, simply:
+1. Click the link below
+2. Verify your account details
+3. Receive your gift card instantly!
+
+[CLAIM YOUR PRIZE NOW] -> http://netflix-gift-center.com/claim
+
+This offer expires in 48 hours. Don't miss out!
+
+Netflix Rewards Team
+
+--------------------------------------------------------------------------------
+EMAIL HEADERS:
+--------------------------------------------------------------------------------
+
+Received: from mail.netflix-gift-center.com ([192.0.2.100])
+Reply-To: rewards@netflix-gift-center.com
+X-Mailer: SendGrid
+DKIM-Status: FAIL
+SPF-Status: FAIL
+
+--------------------------------------------------------------------------------
+PHISHING INDICATORS IDENTIFIED:
+--------------------------------------------------------------------------------
+
+[HIGH] Too Good To Be True: Promises free $500 gift card - unrealistic offer 
+       you didn't enter or earn
+
+[HIGH] Suspicious Domain: 'netflix-gift-center.com' is not an official 
+       Netflix domain
+
+[HIGH] Suspicious Link: URL points to unofficial domain
+
+[MEDIUM] Urgency Tactics: Creates false scarcity - "expires in 48 hours"
+
+[HIGH] Email Authentication: DKIM and SPF checks both FAILED
+
+--------------------------------------------------------------------------------
+ATTACK EXPLANATION:
+--------------------------------------------------------------------------------
+
+This is a classic "too good to be true" scam. Victims are lured by the promise 
+of a free gift card and tricked into clicking a link that either harvests 
+credentials or installs malware. The urgency ("48 hours") pressures victims 
+to act without thinking.
+
+--------------------------------------------------------------------------------
+REMEDIATION:
+--------------------------------------------------------------------------------
+
+1. If it sounds too good to be true, it IS too good to be true
+2. Legitimate companies don't give away large prizes to random people
+3. NEVER click links in prize/lottery emails
+4. Delete immediately without responding
+5. Report to your email provider as spam/phishing
+
+================================================================================

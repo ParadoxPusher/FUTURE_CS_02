@@ -1,0 +1,75 @@
+================================================================================
+EMAIL SAMPLE: EMAIL-002
+CLASSIFICATION: PHISHING
+RISK LEVEL: HIGH
+ATTACK TYPE: Corporate Credential Harvesting
+================================================================================
+
+SUBJECT: Action Required: Password Expiration Notice
+FROM: Microsoft 365 Admin <admin@microsoft365-security-update.com>
+TO: employee@company.com
+DATE: Tue, 21 Mar 2026 14:15:30 +0000
+
+--------------------------------------------------------------------------------
+EMAIL BODY:
+--------------------------------------------------------------------------------
+
+Hello,
+
+Your Microsoft 365 password will expire in 24 hours.
+
+To avoid interruption to your email and services, you must update your 
+password immediately.
+
+Click here to update your password:
+https://microsoft-365-login.secure-portal.net/password-reset
+
+Note: Failure to update your password will result in account lockout.
+
+Thank you,
+IT Support Team
+Microsoft 365
+
+--------------------------------------------------------------------------------
+EMAIL HEADERS:
+--------------------------------------------------------------------------------
+
+Received: from smtp.microsoft365-security-update.com ([203.0.113.45])
+Reply-To: support@microsoft365-security-update.com
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+DKIM-Status: NONE
+SPF-Status: FAIL
+
+--------------------------------------------------------------------------------
+PHISHING INDICATORS IDENTIFIED:
+--------------------------------------------------------------------------------
+
+[HIGH] Suspicious Domain: 'microsoft365-security-update.com' is not an 
+       official Microsoft domain
+
+[HIGH] Suspicious Link: URL points to 'microsoft-365-login.secure-portal.net' 
+       - not microsoft.com
+
+[MEDIUM] Urgency Tactics: Creates false urgency - "24 hours", "account lockout"
+
+[HIGH] Email Authentication: No DKIM signature, SPF check FAILED
+
+--------------------------------------------------------------------------------
+ATTACK EXPLANATION:
+--------------------------------------------------------------------------------
+
+This phishing email impersonates Microsoft 365 IT support, using the common 
+fear of password expiration to trick employees into clicking a malicious link. 
+The fake login page would harvest corporate credentials, potentially 
+compromising the entire organization.
+
+--------------------------------------------------------------------------------
+REMEDIATION:
+--------------------------------------------------------------------------------
+
+1. Corporate IT will NEVER ask you to reset passwords via email links
+2. Always use your company's official password portal
+3. Contact IT support directly if you receive password expiration notices
+4. Report suspicious emails to your security team immediately
+
+================================================================================

@@ -1,0 +1,88 @@
+================================================================================
+EMAIL SAMPLE: EMAIL-004
+CLASSIFICATION: PHISHING
+RISK LEVEL: CRITICAL
+ATTACK TYPE: Business Email Compromise (BEC) / Whaling
+================================================================================
+
+SUBJECT: URGENT: Wire Transfer Request - Confidential
+FROM: CEO John Smith <john.smith@company-executive.com>
+TO: finance@company.com
+DATE: Thu, 23 Mar 2026 16:30:00 +0000
+
+--------------------------------------------------------------------------------
+EMAIL BODY:
+--------------------------------------------------------------------------------
+
+Hi,
+
+I'm currently in meetings and need your urgent assistance.
+
+We have a confidential acquisition that requires immediate payment. Please 
+process a wire transfer of $47,500 to the following account:
+
+Bank: First National Bank
+Account: ****4521
+Routing: 021000021
+Beneficiary: Global Ventures LLC
+
+This is time-sensitive and must be completed today. I will provide full 
+documentation later.
+
+Please confirm once the transfer is initiated.
+
+Regards,
+John Smith
+CEO
+
+Sent from my iPhone
+
+--------------------------------------------------------------------------------
+EMAIL HEADERS:
+--------------------------------------------------------------------------------
+
+Received: from mail.company-executive.com ([185.220.101.33])
+Reply-To: john.smith@company-executive.com
+X-Mailer: iPhone Mail (18D52)
+DKIM-Status: NONE
+SPF-Status: FAIL
+
+--------------------------------------------------------------------------------
+PHISHING INDICATORS IDENTIFIED:
+--------------------------------------------------------------------------------
+
+[CRITICAL] Suspicious Domain: 'company-executive.com' is NOT the company's 
+           actual domain
+
+[CRITICAL] Authority Abuse: Impersonates CEO to bypass normal procedures
+
+[CRITICAL] Unusual Request: Large wire transfer ($47,500) without proper 
+           documentation or approval chain
+
+[HIGH] Extreme Urgency: Multiple urgency indicators - "URGENT", 
+       "time-sensitive", "must be completed today"
+
+[HIGH] Email Authentication: No DKIM, SPF FAILED
+
+--------------------------------------------------------------------------------
+ATTACK EXPLANATION:
+--------------------------------------------------------------------------------
+
+This is a Business Email Compromise (BEC) attack - the most financially 
+damaging type of phishing. The attacker impersonates the CEO to request an 
+urgent wire transfer, bypassing normal approval processes. 
+
+BEC attacks have caused BILLIONS in losses globally. The "Sent from my iPhone" 
+signature adds plausibility for the brief message and urgency.
+
+--------------------------------------------------------------------------------
+REMEDIATION:
+--------------------------------------------------------------------------------
+
+1. NEVER process wire transfers based solely on email requests
+2. ALWAYS verify through a second channel (phone call to known number)
+3. Follow established approval procedures - NO EXCEPTIONS
+4. Be suspicious of "urgent" requests to bypass protocols
+5. Report immediately to security team and CFO
+
+================================================================================

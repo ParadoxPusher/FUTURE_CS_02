@@ -1,0 +1,74 @@
+================================================================================
+EMAIL SAMPLE: EMAIL-003
+CLASSIFICATION: SUSPICIOUS
+RISK LEVEL: MEDIUM
+ATTACK TYPE: Potential Invoice Fraud / Payment Diversion
+================================================================================
+
+SUBJECT: Invoice #INV-2026-0342 Payment Overdue
+FROM: Amazon Business <billing@amazon-business-invoice.com>
+TO: accounts@company.com
+DATE: Wed, 22 Mar 2026 11:45:00 +0000
+
+--------------------------------------------------------------------------------
+EMAIL BODY:
+--------------------------------------------------------------------------------
+
+Dear Valued Customer,
+
+This is a reminder that Invoice #INV-2026-0342 for $1,247.99 is now 15 days 
+overdue.
+
+To avoid late fees and service interruption, please process payment immediately.
+
+View Invoice: http://amazon-business-invoice.com/pay/INV-2026-0342
+
+If you have already made this payment, please disregard this notice.
+
+Best regards,
+Amazon Business Billing Department
+
+Need help? Contact us at support@amazon-business-invoice.com
+
+--------------------------------------------------------------------------------
+EMAIL HEADERS:
+--------------------------------------------------------------------------------
+
+Received: from mail.amazon-business-invoice.com ([198.51.100.22])
+Reply-To: billing@amazon-business-invoice.com
+X-Mailer: MailChimp
+DKIM-Status: PASS
+SPF-Status: SOFTFAIL
+
+--------------------------------------------------------------------------------
+SUSPICIOUS INDICATORS IDENTIFIED:
+--------------------------------------------------------------------------------
+
+[MEDIUM] Suspicious Domain: 'amazon-business-invoice.com' is suspicious - 
+         Amazon uses amazon.com
+
+[MEDIUM] Suspicious Link: Payment URL does not use official amazon.com domain
+
+[MEDIUM] Partial Authentication: DKIM passed but SPF softfail
+
+[LOW] Generic Greeting: Uses "Dear Valued Customer" - generic greeting
+
+--------------------------------------------------------------------------------
+RISK ASSESSMENT:
+--------------------------------------------------------------------------------
+
+This email shows characteristics of invoice fraud. While it has some 
+authentication (DKIM passed), the domain is suspicious and the payment link 
+doesn't use Amazon's official domain. REQUIRES VERIFICATION before any action.
+
+--------------------------------------------------------------------------------
+RECOMMENDED ACTION:
+--------------------------------------------------------------------------------
+
+1. DO NOT click any links in this email
+2. Contact Amazon Business directly through their official website
+3. Verify invoice status through your Amazon Business account portal
+4. Do not use contact information from this email
+5. Report to your finance/security team
+
+================================================================================

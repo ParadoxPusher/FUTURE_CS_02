@@ -1,1 +1,82 @@
+================================================================================
+EMAIL SAMPLE: EMAIL-001
+CLASSIFICATION: PHISHING
+RISK LEVEL: HIGH
+ATTACK TYPE: Credential Harvesting (Typosquatting)
+================================================================================
 
+SUBJECT: Urgent: Your Account Will Be Suspended
+FROM: PayPal Security Team <security@paypa1-secure.com>
+TO: user@example.com
+DATE: Mon, 20 Mar 2026 09:23:45 +0000
+
+--------------------------------------------------------------------------------
+EMAIL BODY:
+--------------------------------------------------------------------------------
+
+Dear Customer,
+
+We noticed unusual activity on your PayPal account. To protect your account 
+from unauthorized access, we have temporarily limited certain features.
+
+Account Status: UNDER REVIEW
+
+To restore full access to your account, please verify your identity by 
+clicking the link below:
+
+[Verify Account Now] -> http://paypal-secure-verification.com/login
+
+If you do not verify your account within 24 hours, your account will be 
+permanently suspended.
+
+Regards,
+PayPal Security Department
+
+© 2026 PayPal. All rights reserved.
+
+--------------------------------------------------------------------------------
+EMAIL HEADERS:
+--------------------------------------------------------------------------------
+
+Received: from mail.paypa1-secure.com (unknown [192.168.1.100])
+Reply-To: security-support@paypa1-secure.com
+X-Mailer: PHPMailer 6.1.5
+DKIM-Status: FAIL
+SPF-Status: FAIL
+
+--------------------------------------------------------------------------------
+PHISHING INDICATORS IDENTIFIED:
+--------------------------------------------------------------------------------
+
+[CRITICAL] Typosquatting Domain: 'paypa1-secure.com' uses number '1' instead 
+           of letter 'l'
+
+[HIGH] Suspicious Link: URL 'paypal-secure-verification.com' is not the 
+       official paypal.com domain
+
+[MEDIUM] Urgency Tactics: Uses fear-based language - "permanently suspended", 
+         "24 hours"
+
+[LOW] Generic Greeting: Uses "Dear Customer" instead of recipient's name
+
+[HIGH] Email Authentication: DKIM and SPF checks both FAILED
+
+--------------------------------------------------------------------------------
+ATTACK EXPLANATION:
+--------------------------------------------------------------------------------
+
+This is a typosquatting attack where the attacker registers a domain that 
+looks similar to PayPal (paypa1 vs paypal). The email creates urgency by 
+threatening account suspension, hoping victims will click the link and enter 
+their credentials on a fake login page controlled by attackers.
+
+--------------------------------------------------------------------------------
+REMEDIATION:
+--------------------------------------------------------------------------------
+
+1. NEVER click links in emails claiming account problems
+2. Always navigate directly to paypal.com by typing in your browser
+3. Check your account status by logging in directly on the official website
+4. Report phishing emails to reportphishing@apwg.org
+
+================================================================================

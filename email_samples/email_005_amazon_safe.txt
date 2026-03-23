@@ -1,0 +1,74 @@
+================================================================================
+EMAIL SAMPLE: EMAIL-005
+CLASSIFICATION: SAFE
+RISK LEVEL: LOW
+TYPE: Legitimate Shipping Notification
+================================================================================
+
+SUBJECT: Your Amazon Order #112-3456789-1234567 Has Shipped
+FROM: Amazon.com <shipment-tracking@amazon.com>
+TO: customer@email.com
+DATE: Fri, 24 Mar 2026 08:00:00 +0000
+
+--------------------------------------------------------------------------------
+EMAIL BODY:
+--------------------------------------------------------------------------------
+
+Hello,
+
+Good news! Your order has shipped.
+
+Order Number: 112-3456789-1234567
+Expected Delivery: March 26, 2026
+
+Track your package:
+https://www.amazon.com/gp/css/shiptrack/view.html
+
+Items in this shipment:
+- Wireless Bluetooth Headphones
+- USB-C Charging Cable
+
+Thank you for shopping with Amazon.
+
+Amazon.com
+
+--------------------------------------------------------------------------------
+EMAIL HEADERS:
+--------------------------------------------------------------------------------
+
+Received: from a1-123.smtp-out.amazonses.com ([54.240.1.123])
+Reply-To: no-reply@amazon.com
+X-Mailer: Amazon SES
+DKIM-Status: PASS
+SPF-Status: PASS
+DMARC-Status: PASS
+
+--------------------------------------------------------------------------------
+SAFETY INDICATORS:
+--------------------------------------------------------------------------------
+
+[SAFE] Verified Domain: 'amazon.com' is the official Amazon domain
+
+[SAFE] Proper Authentication: DKIM, SPF, and DMARC all PASSED
+
+[SAFE] Verified Links: Links point to official amazon.com domain
+
+[SAFE] No Urgency: Standard notification without threats or pressure
+
+[SAFE] Consistent Content: Message is consistent with standard Amazon 
+       communications
+
+--------------------------------------------------------------------------------
+VERIFICATION:
+--------------------------------------------------------------------------------
+
+This is a LEGITIMATE shipping notification from Amazon. All authentication 
+checks pass, links point to official domains, and the content is consistent 
+with standard Amazon communications.
+
+You can safely:
+- Click the tracking link
+- View your order details
+- Contact Amazon through the link if needed
+
+================================================================================
